@@ -27,7 +27,7 @@ pipeline {
             steps {
                 echo 'Running validation...'
                 sh 'test -f app.py'
-                sh 'test -f missing-file.txt'
+                sh 'test -f Jenkinsfile'
                 echo 'Validation passed!'
             }
         }
